@@ -1,0 +1,216 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 20px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.title h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.title button {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 1px 5px blue;
+  background-color: blue;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+}
+.title button:hover {
+  opacity: 0.9;
+}
+.title button:active {
+  box-shadow: 0 3px 5px blue;
+}
+
+.search input {
+  width: 200px;
+  height: 40px;
+  border-radius: 14px;
+  border: 1px solid gray;
+  outline-color: gray;
+  padding: 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.mid {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.mid h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.mid a {
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+.active_a {
+  font-size: 30px !important;
+  color: blue !important;
+}
+
+table thead tr th {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+table tbody tr td {
+  font-size: 15px;
+  font-weight: 400;
+  color: black;
+  border: 1px solid black;
+  text-align: left;
+  padding: 10px;
+}
+.modalMain,
+.modalChange {
+  overflow-y: hidden;
+}
+.modal_bg,
+.mChangeBg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  backdrop-filter: blur(30px);
+}
+.modal,
+.mChange {
+  width: 40%;
+  height: fit-content;
+  position: absolute;
+  background-color: white;
+  opacity: 1 !important;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  padding: 20px 0;
+  border-radius: 15px;
+}
+.modalAnim {
+  animation: modalOpen 1s forwards;
+}
+
+@keyframes modalOpen {
+  from {
+    rotate: 0;
+    scale: 0;
+  }
+  to {
+    rotate: 360deg;
+    scale: 1;
+  }
+}
+.modalClose {
+  animation: modalClose 1s forwards;
+}
+@keyframes modalClose {
+  from {
+    rotate: 360deg;
+    scale: 1;
+  }
+  to {
+    rotate: 0;
+    scale: 0;
+  }
+}
+.modal form,
+.mChange form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.modal form input,
+.mChange form input {
+  width: 60%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  outline-color: gray;
+  padding: 20px;
+  color: black;
+}
+
+.modal form input::placeholder,
+.mChange form input::placeholder {
+  color: black;
+}
+
+.modal form button,
+.mChange form button {
+  width: 60%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: blue;
+  font-size: 18px;
+  color: white;
+  font-weight: 400;
+  box-shadow: 0 1px 5px blue;
+  border: none;
+}
+
+.red {
+  background-color: red !important;
+}
+
+.modal form button:hover,
+.mChange form button:hover {
+  opacity: 0.9;
+}
+.modal form button:active,
+.mChange form button:active {
+  box-shadow: 0 3px 5px blue;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}

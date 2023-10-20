@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="top">
+        <div class="title">
+          <h1>Dashboard</h1>
+          <button>Add task</button>
+        </div>
+        <div class="search">
+          <input type="text" readonly placeholder="Find task" />
+        </div>
+      </div>
+      <div class="mid">
+        <h2>Show like:</h2>
+        <a href="#">Table</a>
+        <a href="#">Card</a>
+      </div>
+      <div class="bottom">
+        <table>
+          <thead>
+            <tr>
+              <th>Task title</th>
+              <th>Description</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Done</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <div class="modalMain">
+      <div class="modal_bg"></div>
+      <div class="modal">
+        <form name="UserData">
+          <input id="title" type="text" placeholder="Title" />
+          <input id="descr" type="text" placeholder="Description" />
+          <input id="date" type="date" placeholder="Date" />
+          <input id="time" type="time" placeholder="Time" />
+          <input id="done" type="text" placeholder="Done" />
+          <button>Add user</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modalChange">
+      <div class="mChangeBg"></div>
+      <div class="mChange">
+        <form name="UserDataChange">
+          <input id="titleChange" type="text" placeholder="Title" />
+          <input id="descrChange" type="text" placeholder="Description" />
+          <input id="dateChange" type="date" placeholder="Date" />
+          <input id="timeChange" type="time" placeholder="Time" />
+          <input id="doneChange" type="text" placeholder="Done" />
+          <button>Change</button>
+          <button class="red" type="button">Delete</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
