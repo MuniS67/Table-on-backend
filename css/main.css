@@ -72,6 +72,7 @@
 .mid h2 {
   font-size: 25px;
   font-weight: 500;
+  transition: 0.4s ease;
 }
 .mid a {
   text-decoration: none;
@@ -212,5 +213,48 @@ table tbody tr td {
   display: block;
 }
 .hide {
-  display: none;
+  display: none !important;
+}
+
+.cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.card_div {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+  border: 1px solid gray;
+  overflow: hidden;
+}
+
+.card_title {
+  font-size: 25px;
+  font-weight: 700;
+}
+.card_p {
+  text-align: left !important;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.card_inf {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
 }
