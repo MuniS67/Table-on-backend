@@ -23,7 +23,7 @@
       </div>
       <div class="mid">
         <h2>Show like:</h2>
-        <a href="#"data-table>Table</a>
+        <a href="#" data-table>Table</a>
         <a href="#">Card</a>
       </div>
       <div class="bottom">
@@ -48,11 +48,16 @@
       <div class="modal_bg"></div>
       <div class="modal">
         <form name="UserData">
-          <input id="title" type="text" placeholder="Title" />
-          <input id="descr" type="text" placeholder="Description" />
-          <input id="date" type="date" placeholder="Date" />
-          <input id="time" type="time" placeholder="Time" />
-          <input id="done" type="text" placeholder="Done" />
+          <input id="title" type="text" name="title" placeholder="Title" />
+          <input
+            id="descr"
+            type="text"
+            name="description"
+            placeholder="Description"
+          />
+          <input id="date" type="date" name="date" placeholder="Date" />
+          <input id="time" type="time" name="time" placeholder="Time" />
+          <input id="done" type="text" name="done" placeholder="Done" />
           <button>Add user</button>
         </form>
       </div>
@@ -62,11 +67,21 @@
       <div class="mChangeBg"></div>
       <div class="mChange">
         <form name="UserDataChange">
-          <input id="titleChange" type="text" placeholder="Title" />
-          <input id="descrChange" type="text" placeholder="Description" />
-          <input id="dateChange" type="date" placeholder="Date" />
-          <input id="timeChange" type="time" placeholder="Time" />
-          <input id="doneChange" type="text" placeholder="Done" />
+          <input
+            id="titleChange"
+            type="text"
+            name="title"
+            placeholder="Title"
+          />
+          <input
+            id="descrChange"
+            type="text"
+            name="description"
+            placeholder="Description"
+          />
+          <input id="dateChange" type="date" name="date" placeholder="Date" />
+          <input id="timeChange" type="time" name="time" placeholder="Time" />
+          <input id="doneChange" type="text" name="done" placeholder="Done" />
           <button>Change</button>
           <button class="red" type="button">Delete</button>
         </form>
